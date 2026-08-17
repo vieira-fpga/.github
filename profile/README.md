@@ -1,6 +1,12 @@
-# Vieira FPGA
+<h1 align="center">
+  <img src="../.github/assets/icon.png" width="64">
+  <br>
+  Vieira FPGA
+</h1>
 
-FPGA cores by [Morgan Vieira](https://github.com/morgan-vieira). Also at [fpga.morganvieira.com](https://fpga.morganvieira.com).
+Vieira FPGA is [Morgan Vieira](https://github.com/morgan-vieira)'s home for FPGA core development: hardware recreations of classic consoles and arcade machines for the Analogue Pocket's [openFPGA](https://www.analogue.co/developer) platform. Every core is written in Verilog together with frontier AI models. More at [fpga.morganvieira.com](https://fpga.morganvieira.com).
+
+Every core is built from primary sources: hardware manuals, development manuals, and whatever documentation of the original internals survives. That documented behaviour is replicated in Verilog and pinned down by tests, the code is kept readable enough to maintain by hand, and cores keep receiving updates after release.
 
 <!-- cores:start -->
 ## Latest updated core
