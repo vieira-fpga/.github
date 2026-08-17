@@ -13,7 +13,7 @@ Every core is built from primary sources: hardware manuals, development manuals,
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" valign="middle">
 
 ### [Virtual Boy](https://github.com/vieira-fpga/openFPGA-VirtualBoy)
 
