@@ -10,7 +10,7 @@ Each core is built from primary sources: hardware manuals, development manuals, 
 
 ## Core libraries
 
-Apart from [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX), which I submitted to openFPGA-library and now consider a mistake, I will not submit my cores to openFPGA-library or similar libraries. I am aware of the general consensus that cores made with AI are "slop," and I respect that. This policy will remain in place until there is a standard way for publishers to declare that AI was used to make a core.
+Apart from [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX), which I submitted to `openFPGA-library` and now consider a mistake, I will not submit my cores to `openFPGA-library` or similar libraries. I am aware of the general consensus that cores made with AI are "slop," and I respect that. This policy will remain in place until there is a standard way for publishers to declare that AI was used to make a core.
 
 <!-- cores:start -->
 ## Latest updated core
