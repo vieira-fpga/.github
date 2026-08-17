@@ -15,13 +15,13 @@ Every core is built from primary sources: hardware manuals, development manuals,
 <tr>
 <td width="50%" valign="top">
 
-### [Loopy](https://github.com/vieira-fpga/openFPGA-Loopy)
+### [Virtual Boy](https://github.com/vieira-fpga/openFPGA-VirtualBoy)
 
-♫ 𝘪𝘮 𝘫𝘶𝘴𝘵 𝘢 𝘨𝘪𝘳𝘭 ♫
+A Nintendo Virtual Boy core for the Analogue Pocket.
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://opengraph.githubassets.com/1/vieira-fpga/openFPGA-Loopy" alt="Loopy"></a>
+<a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-VirtualBoy/main/.github/assets/github-social-banner.png" alt="Virtual Boy"></a>
 </td>
 </tr>
 </table>
@@ -31,9 +31,9 @@ Every core is built from primary sources: hardware manuals, development manuals,
 <table>
 <tr>
 <td align="center" width="33%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-VirtualBoy/main/.github/assets/github-social-banner.png" alt="Virtual Boy"></a>
-<br><b><a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy">Virtual Boy</a></b>
-<br>A Nintendo Virtual Boy core for the Analogue Pocket.
+<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://opengraph.githubassets.com/1/vieira-fpga/openFPGA-Loopy" alt="Loopy"></a>
+<br><b><a href="https://github.com/vieira-fpga/openFPGA-Loopy">Loopy</a></b>
+<br>♫ 𝘪𝘮 𝘫𝘶𝘴𝘵 𝘢 𝘨𝘪𝘳𝘭 ♫
 <br>In development
 </td>
 <td align="center" width="33%" valign="top">
