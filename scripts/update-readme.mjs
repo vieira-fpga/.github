@@ -16,17 +16,20 @@ const END = "<!-- cores:end -->";
 // Anything not listed falls back to the repo name minus the prefix.
 const DISPLAY_NAMES = { RallyX: "Rally-X", VirtualBoy: "Virtual Boy" };
 
-/** @param {string} path @returns {Promise<any>} resolves null on 404 */
-async function api(path) {
-	const res = await fetch(`https://api.github.com${path}`, {
+/** @param {string} query @returns {Promise<any>} the `data` payload */
+async function graphql(query) {
+	const res = await fetch("https://api.github.com/graphql", {
+		method: "POST",
 		headers: {
 			accept: "application/vnd.github+json",
 			authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
 		},
+		body: JSON.stringify({ query }),
 	});
-	if (res.status === 404) return null;
-	if (!res.ok) throw new Error(`GET ${path} -> ${res.status}`);
-	return res.json();
+	if (!res.ok) throw new Error(`GraphQL -> ${res.status}`);
+	const { data, errors } = await res.json();
+	if (errors) throw new Error(errors.map((e) => e.message).join("; "));
+	return data;
 }
 
 /** @param {string} text */
@@ -34,37 +37,35 @@ function escapeHtml(text) {
 	return text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 }
 
-/** Banner from the core repo's .github/assets, falling back to GitHub's
- * generated opengraph card. "social" names win over "banner" names: the
- * social images are the 2:1 art the README wants, while e.g. RallyX's
- * analogue-banner.png is the small 521x165 Pocket platform art. */
-async function bannerUrl(repo) {
-	const assets = (await api(`/repos/${repo.full_name}/contents/.github/assets`)) ?? [];
-	const pngs = assets.filter((a) => a.name.endsWith(".png"));
-	const banner =
-		pngs.find((a) => a.name.includes("social")) ??
-		pngs.find((a) => a.name.includes("banner")) ??
-		pngs[0];
-	return banner
-		? `https://raw.githubusercontent.com/${repo.full_name}/${repo.default_branch}/${banner.path}`
-		: `https://opengraph.githubassets.com/1/${repo.full_name}`;
-}
-
-/** @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, banner: string}>>} newest-pushed first */
+/** `openGraphImageUrl` is the repo's social preview: the image uploaded under
+ * Settings > Social preview, or GitHub's generated card when there isn't one.
+ * @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, banner: string}>>} newest-pushed first */
 async function fetchCores() {
-	const repos = await api(`/orgs/${ORG}/repos?per_page=100`);
-	const cores = repos
-		.filter((r) => r.name.startsWith(CORE_PREFIX))
-		.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
-	return Promise.all(
-		cores.map(async (repo) => ({
-			name: DISPLAY_NAMES[repo.name.slice(CORE_PREFIX.length)] ?? repo.name.slice(CORE_PREFIX.length),
-			url: repo.html_url,
-			description: repo.description ?? "",
-			version: (await api(`/repos/${repo.full_name}/releases/latest`))?.tag_name ?? null,
-			banner: await bannerUrl(repo),
-		})),
-	);
+	const data = await graphql(`{
+		organization(login: "${ORG}") {
+			repositories(first: 100, orderBy: {field: PUSHED_AT, direction: DESC}) {
+				nodes {
+					name
+					url
+					description
+					openGraphImageUrl
+					latestRelease { tagName }
+				}
+			}
+		}
+	}`);
+	return data.organization.repositories.nodes
+		.filter((repo) => repo.name.startsWith(CORE_PREFIX))
+		.map((repo) => {
+			const short = repo.name.slice(CORE_PREFIX.length);
+			return {
+				name: DISPLAY_NAMES[short] ?? short,
+				url: repo.url,
+				description: repo.description ?? "",
+				version: repo.latestRelease?.tagName ?? null,
+				banner: repo.openGraphImageUrl,
+			};
+		});
 }
 
 /** @param {Awaited<ReturnType<typeof fetchCores>>[number]} core */
