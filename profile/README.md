@@ -4,9 +4,13 @@
   Vieira FPGA
 </h1>
 
-Vieira FPGA is [Morgan Vieira](https://github.com/morgan-vieira)'s home for FPGA core development: hardware recreations of classic consoles and arcade machines for the Analogue Pocket's [openFPGA](https://www.analogue.co/developer) platform. Every core is written in Verilog together with frontier AI models. More at [fpga.morganvieira.com](https://fpga.morganvieira.com).
+Vieira FPGA is my home for FPGA core development. I build hardware recreations of classic consoles and arcade machines for the Analogue Pocket's [openFPGA](https://www.analogue.co/developer) platform, with frontier AI models doing most of the Verilog implementation.
 
-Every core is built from primary sources: hardware manuals, development manuals, and whatever documentation of the original internals survives. That documented behaviour is replicated in Verilog and pinned down by tests, the code is kept readable enough to maintain by hand, and cores keep receiving updates after release.
+Each core is built from primary sources: hardware manuals, development manuals, and whatever documentation of the original internals survives. I give the models that context, make sure they cover the documented behaviour, and verify their work with test ROMs, hardware tests, and screenshots. I also keep the code readable enough to maintain by hand and continue testing and updating cores after release.
+
+## Core libraries
+
+Apart from [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX), which I submitted to openFPGA-library and now consider a mistake, I will not submit my cores to openFPGA-library or similar libraries. I am aware of the general consensus that cores made with AI are "slop," and I respect that. This policy will remain in place until there is a standard way for publishers to declare that AI was used to make a core.
 
 <!-- cores:start -->
 ## Latest updated core
