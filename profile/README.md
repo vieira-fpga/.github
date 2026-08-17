@@ -13,10 +13,6 @@ FPGA cores by [Morgan Vieira](https://github.com/morgan-vieira). Also at [fpga.m
 
 A Nintendo Virtual Boy core for the Analogue Pocket.
 
-- **Platform:** Analogue Pocket
-- **Status:** In development
-- **Updated:** 16 Aug 2026
-
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-VirtualBoy/main/.github/assets/github-social-banner.png" alt="Virtual Boy"></a>
