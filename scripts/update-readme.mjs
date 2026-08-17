@@ -50,7 +50,7 @@ async function bannerUrl(repo) {
 		: `https://opengraph.githubassets.com/1/${repo.full_name}`;
 }
 
-/** @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, pushedAt: Date, banner: string}>>} newest-pushed first */
+/** @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, banner: string}>>} newest-pushed first */
 async function fetchCores() {
 	const repos = await api(`/orgs/${ORG}/repos?per_page=100`);
 	const cores = repos
@@ -62,15 +62,10 @@ async function fetchCores() {
 			url: repo.html_url,
 			description: repo.description ?? "",
 			version: (await api(`/repos/${repo.full_name}/releases/latest`))?.tag_name ?? null,
-			pushedAt: new Date(repo.pushed_at),
 			banner: await bannerUrl(repo),
 		})),
 	);
 }
-
-const formatDate = new Intl.DateTimeFormat("en-GB", {
-	day: "numeric", month: "short", year: "numeric", timeZone: "UTC",
-}).format;
 
 /** @param {Awaited<ReturnType<typeof fetchCores>>[number]} core */
 function heroSection(core) {
@@ -83,10 +78,6 @@ function heroSection(core) {
 ### [${core.name}](${core.url})
 
 ${core.description}
-
-- **Platform:** Analogue Pocket
-- **${core.version ? "Version" : "Status"}:** ${core.version ?? "In development"}
-- **Updated:** ${formatDate(core.pushedAt)}
 
 </td>
 <td width="50%" valign="top">
