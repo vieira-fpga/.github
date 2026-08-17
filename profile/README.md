@@ -15,13 +15,13 @@ Every core is built from primary sources: hardware manuals, development manuals,
 <tr>
 <td width="50%" valign="top">
 
-### [Virtual Boy](https://github.com/vieira-fpga/openFPGA-VirtualBoy)
+### [Loopy](https://github.com/vieira-fpga/openFPGA-Loopy)
 
-A Nintendo Virtual Boy core for the Analogue Pocket.
+♫ 𝘪𝘮 𝘫𝘶𝘴𝘵 𝘢 𝘨𝘪𝘳𝘭 ♫
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-VirtualBoy/main/.github/assets/github-social-banner.png" alt="Virtual Boy"></a>
+<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://opengraph.githubassets.com/1/vieira-fpga/openFPGA-Loopy" alt="Loopy"></a>
 </td>
 </tr>
 </table>
@@ -31,12 +31,17 @@ A Nintendo Virtual Boy core for the Analogue Pocket.
 <table>
 <tr>
 <td align="center" width="33%" valign="top">
+<a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-VirtualBoy/main/.github/assets/github-social-banner.png" alt="Virtual Boy"></a>
+<br><b><a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy">Virtual Boy</a></b>
+<br>A Nintendo Virtual Boy core for the Analogue Pocket.
+<br>In development
+</td>
+<td align="center" width="33%" valign="top">
 <a href="https://github.com/vieira-fpga/openFPGA-RallyX"><img src="https://raw.githubusercontent.com/vieira-fpga/openFPGA-RallyX/main/.github/assets/gh-social.png" alt="Rally-X"></a>
 <br><b><a href="https://github.com/vieira-fpga/openFPGA-RallyX">Rally-X</a></b>
 <br>An Analogue Pocket core that plays Namco's Rally-X &amp; New Rally-X.
 <br>v1.5.2
 </td>
-<td width="33%"></td>
 <td width="33%"></td>
 </tr>
 </table>
