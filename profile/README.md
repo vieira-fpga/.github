@@ -35,16 +35,16 @@ A Nintendo Virtual Boy core for the Analogue Pocket.
 <table>
 <tr>
 <td align="center" width="33%" valign="top">
+<a href="https://github.com/vieira-fpga/openFPGA-RallyX"><img src="https://repository-images.githubusercontent.com/1311307855/963b6019-9e01-40bd-8e44-b55a783d8c84" alt="Rally-X"></a>
+<br><b><a href="https://github.com/vieira-fpga/openFPGA-RallyX">Rally-X</a></b>
+<br>An Analogue Pocket core that plays Namco's Rally-X &amp; New Rally-X.
+<br>v1.5.3
+</td>
+<td align="center" width="33%" valign="top">
 <a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://opengraph.githubassets.com/338261a7fe5ff6626ae2f59c7a31b5cafc61feb60c24d4419dcb969f84638ebf/vieira-fpga/openFPGA-Loopy" alt="Loopy"></a>
 <br><b><a href="https://github.com/vieira-fpga/openFPGA-Loopy">Loopy</a></b>
 <br>♫ 𝘪𝘮 𝘫𝘶𝘴𝘵 𝘢 𝘨𝘪𝘳𝘭 ♫
 <br>In development
-</td>
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-RallyX"><img src="https://repository-images.githubusercontent.com/1311307855/963b6019-9e01-40bd-8e44-b55a783d8c84" alt="Rally-X"></a>
-<br><b><a href="https://github.com/vieira-fpga/openFPGA-RallyX">Rally-X</a></b>
-<br>An Analogue Pocket core that plays Namco's Rally-X &amp; New Rally-X.
-<br>v1.5.2
 </td>
 <td width="33%"></td>
 </tr>
