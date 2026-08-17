@@ -74,7 +74,7 @@ function heroSection(core) {
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" valign="middle">
 
 ### [${core.name}](${core.url})
 
