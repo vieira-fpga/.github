@@ -25,7 +25,7 @@ Apart from [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX), which I su
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/96cb4096-16aa-4c53-a7b6-961def7d8b51" alt="Loopy"></a>
+<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/93ca449f-239b-413a-a880-fa7ea146c8b6" alt="Loopy"></a>
 </td>
 </tr>
 </table>
