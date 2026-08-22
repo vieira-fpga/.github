@@ -21,11 +21,11 @@ Apart from [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX), which I su
 
 ### [Loopy](https://github.com/vieira-fpga/openFPGA-Loopy)
 
-♫ 𝘪𝘮 𝘫𝘶𝘴𝘵 𝘢 𝘨𝘪𝘳𝘭 ♫
+Analogue Pocket core for the Casio Loopy.
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/d63cb238-4e9a-4c98-9a38-9bbacee6fdfb" alt="Loopy"></a>
+<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/2ae14b3f-08f5-421e-9028-1c7b7970b5d9" alt="Loopy"></a>
 </td>
 </tr>
 </table>
