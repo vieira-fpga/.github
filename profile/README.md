@@ -25,7 +25,7 @@ Analogue Pocket core for the Casio Loopy.
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/0764a316-57f1-4d3e-a5fc-5891609129a1" alt="Loopy"></a>
+<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/8715bcc2-904e-41f2-94d9-a8fcc0306336" alt="Loopy"></a>
 </td>
 </tr>
 </table>
