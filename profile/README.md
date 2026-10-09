@@ -40,12 +40,7 @@ An Analogue Pocket core that plays Namco's Rally-X & New Rally-X.
 <br>Analogue Pocket core for the Casio Loopy.
 <br>In development
 </td>
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy"><img src="https://repository-images.githubusercontent.com/1328244612/1b333e1d-8c69-49a7-a4df-28bbe2595375" alt="Virtual Boy"></a>
-<br><b><a href="https://github.com/vieira-fpga/openFPGA-VirtualBoy">Virtual Boy</a></b>
-<br>A Nintendo Virtual Boy core for the Analogue Pocket.
-<br>In development
-</td>
+<td width="33%"></td>
 <td width="33%"></td>
 </tr>
 </table>
