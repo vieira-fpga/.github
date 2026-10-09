@@ -1,8 +1,8 @@
 // Regenerates the core listings in profile/README.md from the live state of
 // the vieira-fpga org: newest-pushed core becomes the hero section, the rest
-// fill a 3-column grid (newest to oldest, capped at 9). Run by the
-// update-readme workflow; needs GITHUB_TOKEN. Run locally with
-// `GITHUB_TOKEN=$(gh auth token) node scripts/update-readme.mjs`.
+// fill a 3-column grid (newest to oldest, capped at 9). Archived cores are
+// left out of both. Run by the update-readme workflow; needs GITHUB_TOKEN.
+// Run locally with `GITHUB_TOKEN=$(gh auth token) node scripts/update-readme.mjs`.
 
 import { readFile, writeFile } from "node:fs/promises";
 
@@ -39,7 +39,7 @@ function escapeHtml(text) {
 
 /** `openGraphImageUrl` is the repo's social preview: the image uploaded under
  * Settings > Social preview, or GitHub's generated card when there isn't one.
- * @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, banner: string}>>} newest-pushed first */
+ * @returns {Promise<Array<{name: string, url: string, description: string, version: string | null, banner: string}>>} unarchived cores, newest-pushed first */
 async function fetchCores() {
 	const data = await graphql(`{
 		organization(login: "${ORG}") {
@@ -49,13 +49,14 @@ async function fetchCores() {
 					url
 					description
 					openGraphImageUrl
+					isArchived
 					latestRelease { tagName }
 				}
 			}
 		}
 	}`);
 	return data.organization.repositories.nodes
-		.filter((repo) => repo.name.startsWith(CORE_PREFIX))
+		.filter((repo) => repo.name.startsWith(CORE_PREFIX) && !repo.isArchived)
 		.map((repo) => {
 			const short = repo.name.slice(CORE_PREFIX.length);
 			return {
@@ -117,7 +118,9 @@ if (!readme.includes(START) || !readme.includes(END)) {
 }
 const generated = `${START}\n${heroSection(cores[0])}${gridSection(cores.slice(1))}\n${END}`;
 const updated =
-	readme.slice(0, readme.indexOf(START)) + generated + readme.slice(readme.indexOf(END) + END.length);
+	readme.slice(0, readme.indexOf(START)) +
+	generated +
+	readme.slice(readme.indexOf(END) + END.length);
 
 if (updated === readme) {
 	console.log("README already up to date");
