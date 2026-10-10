@@ -3,7 +3,6 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"update-readme": "node scripts/update-readme.mjs",
 		"format": "oxfmt",
 		"format:check": "oxfmt --check",
 		"lint": "oxlint --deny-warnings"

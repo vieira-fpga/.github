@@ -27,38 +27,3 @@
     </a>
   </p>
 </div>
-
-<!-- cores:start -->
-
-## Latest updated core
-
-<table>
-<tr>
-<td width="50%" valign="middle">
-
-### [Rally-X](https://github.com/vieira-fpga/openFPGA-RallyX)
-
-An Analogue Pocket core that plays Namco's Rally-X & New Rally-X.
-
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-RallyX"><img src="https://repository-images.githubusercontent.com/1311307855/963b6019-9e01-40bd-8e44-b55a783d8c84" alt="Rally-X"></a>
-</td>
-</tr>
-</table>
-
-## Cores
-
-<table>
-<tr>
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/vieira-fpga/openFPGA-Loopy"><img src="https://repository-images.githubusercontent.com/1336491535/79ef3e5e-b1ea-40c7-977d-98fcd58d12f1" alt="Loopy"></a>
-<br><b><a href="https://github.com/vieira-fpga/openFPGA-Loopy">Loopy</a></b>
-<br>Analogue Pocket core for the Casio Loopy.
-<br>In development
-</td>
-<td width="33%"></td>
-<td width="33%"></td>
-</tr>
-</table>
-<!-- cores:end -->
