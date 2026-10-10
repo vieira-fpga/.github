@@ -1,7 +1,8 @@
 <h1 align="center">
-  <img src="../.github/assets/icon.png" width="64">
-  <br>
-  Vieira FPGA
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logo-dark.svg">
+    <img src="../.github/assets/logo-light.svg" alt="Vieira FPGA" width="480">
+  </picture>
 </h1>
 
 Vieira FPGA is where I make cores for the [Analogue Pocket](https://www.analogue.co/developer).
@@ -45,3 +46,9 @@ An Analogue Pocket core that plays Namco's Rally-X & New Rally-X.
 </tr>
 </table>
 <!-- cores:end -->
+
+## Old logo
+
+<img src="../.github/assets/old/icon-aug-2026.png" alt="The original MV logo" width="64">
+
+This was the first Vieira FPGA logo. The MV in the new logo comes from it.
