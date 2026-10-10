@@ -1,0 +1,10 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"[markdown]": {
+		"editor.quickSuggestions": { "other": "on" },
+		"editor.tabCompletion": "on"
+	},
+	"emmet.includeLanguages": { "markdown": "html" },
+	"emmet.triggerExpansionOnTab": true
+}
