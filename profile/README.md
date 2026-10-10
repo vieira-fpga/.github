@@ -11,7 +11,7 @@
   <p>I'm dedicated towards bringing arcade and console hardware to the Analogue Pocket. I develop and maintain open-source openFPGA cores, built with Frontier models, release new ones as they become playable, and keep improving them long after launch.</p>
   <!-- Website/Social icons -->
   <p>
-    <a href="TODO" target="_blank">
+    <a href="https://fpga.morganvieira.com" target="_blank">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/icons/website-dark.svg" />
         <source media="(prefers-color-scheme: light)" srcset="../.github/assets/icons/website-light.svg" />
