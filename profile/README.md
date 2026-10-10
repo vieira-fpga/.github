@@ -29,7 +29,6 @@
 </div>
 
 <!-- cores:start -->
-
 ## Latest updated core
 
 <table>
