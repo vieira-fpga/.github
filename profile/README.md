@@ -1,19 +1,35 @@
-<h1 align="center">
+<div align="left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logo-dark.svg">
-    <img src="../.github/assets/logo-light.svg" alt="Vieira FPGA" width="480">
+    <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logo-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="../.github/assets/logo-light.svg" />
+    <img height="120" src="../.github/assets/logo-light.svg" alt="Vieira FPGA" />
   </picture>
-</h1>
-
-Vieira FPGA is where I make cores for the [Analogue Pocket](https://www.analogue.co/developer).
-
-Each core starts from the original documentation such as hardware manuals, developer guides, and anything else that describes how the machine worked. I give that to the AI, check its work against real games and test programs, and keep fixing cores after release.
-
-## Made with AI
-
-Every core here is made with AI, and each one says so. The cores I publish to the openFPGA library are marked as made with AI in the library's listing.
+  <!-- Title/Desc -->
+  <h2>Vieira FPGA</h2>
+  <p>Analogue Pocket Cores, Arcade and Console Hardware, and openFPGA Development Using Frontier Models</p>
+  <hr />
+  <p>I'm dedicated towards bringing arcade and console hardware to the Analogue Pocket. I develop and maintain open-source openFPGA cores, built with Frontier models, release new ones as they become playable, and keep improving them long after launch.</p>
+  <!-- Website/Social icons -->
+  <p>
+    <a href="TODO" target="_blank">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/icons/website-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="../.github/assets/icons/website-light.svg" />
+        <img width="24" src="../.github/assets/icons/website-light.svg" alt="Website" />
+      </picture>
+    </a>
+    <a href="https://x.com/morganvieira" target="_blank">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/icons/twitter-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="../.github/assets/icons/twitter-light.svg" />
+        <img width="24" src="../.github/assets/icons/twitter-light.svg" alt="Twitter" />
+      </picture>
+    </a>
+  </p>
+</div>
 
 <!-- cores:start -->
+
 ## Latest updated core
 
 <table>
@@ -46,9 +62,3 @@ An Analogue Pocket core that plays Namco's Rally-X & New Rally-X.
 </tr>
 </table>
 <!-- cores:end -->
-
-## Old logo
-
-<img src="../.github/assets/old/icon-aug-2026.png" alt="The original MV logo" width="64">
-
-This was the first Vieira FPGA logo. The MV in the new logo comes from it.
