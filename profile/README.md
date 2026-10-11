@@ -1,14 +1,14 @@
 <div align="left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logo-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="../.github/assets/logo-light.svg" />
-    <img height="120" src="../.github/assets/logo-light.svg" alt="Vieira FPGA" />
+    <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/svg/logo-mark-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="../.github/assets/svg/logo-mark-light.svg" />
+    <img width="120" height="120" src="../.github/assets/svg/logo-mark-light.svg" alt="Vieira FPGA" />
   </picture>
   <!-- Title/Desc -->
   <h2>Vieira FPGA</h2>
-  <p>Analogue Pocket Cores, Arcade and Console Hardware, and openFPGA Development Using Frontier Models</p>
+  <p>Bringing arcade and console games to the Analogue Pocket with AI models.</p>
   <hr />
-  <p>I'm dedicated towards bringing arcade and console hardware to the Analogue Pocket. I develop and maintain open-source openFPGA cores, built with Frontier models, release new ones as they become playable, and keep improving them long after launch.</p>
+  <p>I take open-source cores from projects like MiSTer and adapt them to the Analogue Pocket using Claude and GPT. I keep every core open source, credit the people whose work it builds on, release new cores once they play well, and keep improving them long after release.</p>
   <!-- Website/Social icons -->
   <p>
     <a href="https://fpga.morganvieira.com" target="_blank">
